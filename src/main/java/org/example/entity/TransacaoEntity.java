@@ -2,17 +2,17 @@ package org.example.entity;
 
 public class TransacaoEntity {
     private int correlation_id;
-    private String datetime;
+    private String date_time;
     private int conta_origem;
     private int conta_destino;
-    private double VALOR;
+    private double valor;
 
-    public TransacaoEntity(int correlation_id, String datetime, int conta_origem, int conta_destino, double VALOR) {
+    public TransacaoEntity(int correlation_id, String date_time, int conta_origem, int conta_destino, double valor) {
         this.correlation_id = correlation_id;
-        this.datetime = datetime;
+        this.date_time = date_time;
         this.conta_origem = conta_origem;
         this.conta_destino = conta_destino;
-        this.VALOR = VALOR;
+        this.valor = valor;
     }
 
     public int getCorrelationId() {
@@ -28,6 +28,6 @@ public class TransacaoEntity {
     }
 
     public double getValor() {
-        return VALOR;
+        return valor;
     }
 }
